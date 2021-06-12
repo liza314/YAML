@@ -100,7 +100,7 @@ basic rules:
 
 1. Scalars, or variables, are defined using a colon and a space.
 
-####Javascript　
+
 integer: 25 
 string: "25" 
 float: 25.0 
@@ -108,7 +108,7 @@ boolean: Yes
 
 numeric types
 
-####Javascript　
+　
 ---
  foo: 12345
  bar: 0x12d4
@@ -116,7 +116,7 @@ numeric types
 
 strings are Unicode
 ---
-####Javascript　
+　
 foo: "this is not a normal string\n"
 bar: this is not a normal string\n
 
@@ -175,7 +175,7 @@ a single paragraph
 5. Comments begin with a pound sign
 
 ___
-# This is a full line comment
+ This is a full line comment
 foo: bar # this is a comment, too
 
 Synopsis of YAML Basic Elements:
