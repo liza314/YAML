@@ -134,43 +134,51 @@ light: On
 TV: Off
 
 arrays
+```
 ---
 items: [ 1, 2, 3, 4, 5 ]
 names: [ "one", "two", "three", "four" ]
-
+```
 dictionaries
+```
 ---
 foo: { thing1: huey, thing2: louie, thing3: dewey }
-
+```
 
 2. Associative arrays and lists can be defined using a conventional block format or an inline format that is similar to JSON.
 
+```
 --- # Shopping List in Block Format
  - milk - eggs – juice
  --- # Shopping List in Inline Format
  [milk, eggs, juice]
-
+```
 
 3. Strings do not require quotation mark. Strings can be denoted with a | character, which preserves newlines, or a > character, which folds newlines.
 
+```
 data: |
  Each of these
  Newlines Will 
  be broken up 
+ ```
 
+```
 data: > 
 This text is
 wrapped and will
 be formed into 
 a single paragraph
 
+```
 4. block format uses hyphen (-) and space to begin a new item in a specified list
 
-
+```
 --- # Favorite movies
  - Casablanca
  - North by Northwest
  - The Man Who Wasn't There
+```
 
 5. Comments begin with a pound sign
 
@@ -179,27 +187,29 @@ ___
 foo: bar # this is a comment, too
 
 Synopsis of YAML Basic Elements:
-•	The synopsis of YAML basic elements is given here: Comments in YAML begins with the (#) character.
-•	Comments must be separated from other tokens by whitespaces.
-•	Indentation of whitespace is used to denote structure.
-•	Tabs are not included as indentation for YAML files.
-•	List members are denoted by a leading hyphen (-).
-•	List members are enclosed in square brackets and separated by commas.
-•	Associative arrays are represented using colon ( : ) in the format of key value pair. They are enclosed in curly braces {}.
-•	Multiple documents with single streams are separated with 3 hyphens (---).
-•	Repeated nodes in each file are initially denoted by an ampersand (&) and by an asterisk (*) mark later.
-•	YAML always requires colons and commas used as list separators followed by space with scalar values.
-•	Nodes should be labelled with an exclamation mark (!) or double exclamation mark (!!), followed by string which can be expanded into an URI or URL.
+-	The synopsis of YAML basic elements is given here: Comments in YAML begins with the (#) character.
+-	Comments must be separated from other tokens by whitespaces.
+-	Indentation of whitespace is used to denote structure.
+-	Tabs are not included as indentation for YAML files.
+-	List members are denoted by a leading hyphen (-).
+-	List members are enclosed in square brackets and separated by commas.
+-	Associative arrays are represented using colon ( : ) in the format of key value pair. They are enclosed in curly braces {}.
+-	Multiple documents with single streams are separated with 3 hyphens (---).
+-	Repeated nodes in each file are initially denoted by an ampersand (&) and by an asterisk (*) mark later.
+-	YAML always requires colons and commas used as list separators followed by space with scalar values.
+-	Nodes should be labelled with an exclamation mark (!) or double exclamation mark (!!), followed by string which can be expanded into an URI or URL.
 
 Advanced component:
 
  YAML has the strip chomp and preserve chomp operators. To save the last character, add a plus to the fold or block operators.
-
+ 
+```
 bar: >+
   this is not a normal string it
   spans more than
   one line
   see?
+  ```
 
 if the value ends with whitespace, like a newline, YAML will preserve it. To strip the character, use the strip operator.
 
