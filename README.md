@@ -90,6 +90,7 @@ timestamp	Supports date, datetime
 
 
 ***Rules for Creating YAML file:***
+
 basic rules: 
 1. YAML is case sensitive
 2. The files should have .yaml as the extension
@@ -100,39 +101,44 @@ basic rules:
 
 1. Scalars, or variables, are defined using a colon and a space.
 
-
+```
 integer: 25 
 string: "25" 
 float: 25.0 
 boolean: Yes
-
+```
 numeric types
 
-　
+　```
 ---
  foo: 12345
  bar: 0x12d4
  plop: 023332
+ ```
 
 strings are Unicode
+```
 ---
 　
 foo: "this is not a normal string\n"
 bar: this is not a normal string\n
+```
 
 nulls with a tilde or the unquoted null string literal
+```
 ---
 foo: ~
 bar: null
-
+```
 
 boolean values
+```
 ---
 foo: True
 bar: False
 light: On
 TV: Off
-
+```
 arrays
 ```
 ---
