@@ -168,6 +168,7 @@ foo: { thing1: huey, thing2: louie, thing3: dewey }
 ```
 --- # Shopping List in Block Format
  - milk - eggs – juice
+ 
  --- # Shopping List in Inline Format
  [milk, eggs, juice]
 ```
