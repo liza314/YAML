@@ -46,7 +46,7 @@ YEYY!!! you completed the most important part of the topic 🥳🥳.
 
 HERE COMES YAML!!!
 
-#YAML
+# YAML
 
 YAML recursive acronym stands for “YAML Ain't Markup Language”. Firstly, it’s not markup language. It is a human friendly data serialization language and most importantly works perfectly with other programming languages. It is often used to write configuration files.
 
