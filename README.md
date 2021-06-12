@@ -117,6 +117,7 @@ numeric types
  ```
 
 strings are Unicode
+
 ```
 ---
 　
@@ -125,6 +126,7 @@ bar: this is not a normal string\n
 ```
 
 nulls with a tilde or the unquoted null string literal
+
 ```
 ---
 foo: ~
@@ -132,6 +134,7 @@ bar: null
 ```
 
 boolean values
+
 ```
 ---
 foo: True
@@ -139,19 +142,28 @@ bar: False
 light: On
 TV: Off
 ```
+
 arrays
+
+
 ```
 ---
 items: [ 1, 2, 3, 4, 5 ]
 names: [ "one", "two", "three", "four" ]
 ```
+
+
 dictionaries
+
+
 ```
 ---
 foo: { thing1: huey, thing2: louie, thing3: dewey }
 ```
 
+
 2. Associative arrays and lists can be defined using a conventional block format or an inline format that is similar to JSON.
+
 
 ```
 --- # Shopping List in Block Format
@@ -160,7 +172,9 @@ foo: { thing1: huey, thing2: louie, thing3: dewey }
  [milk, eggs, juice]
 ```
 
+
 3. Strings do not require quotation mark. Strings can be denoted with a | character, which preserves newlines, or a > character, which folds newlines.
+
 
 ```
 data: |
@@ -209,13 +223,13 @@ Advanced component:
 
  YAML has the strip chomp and preserve chomp operators. To save the last character, add a plus to the fold or block operators.
  
-```
+
 bar: >+
   this is not a normal string it
   spans more than
   one line
   see?
-  ```
+ 
 
 if the value ends with whitespace, like a newline, YAML will preserve it. To strip the character, use the strip operator.
 
